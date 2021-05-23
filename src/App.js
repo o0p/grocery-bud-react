@@ -9,8 +9,14 @@ function App() {
   const [editID, setEditID] = useState(null);
   const [alert, setAlert] = useState({ show: false, msg: '', type: '' });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('hi');
+  };
+
   return (
     <section className="section-center">
+      <form className="grocery-form" onSubmit={handleSubmit}></form>
       <div className="grocery-container">
         <List />
         <button className="clear-btn">clear items</button>
