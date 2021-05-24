@@ -3,7 +3,8 @@ import List from './List';
 import Alert from './Alert';
 
 function App() {
-  const [name, setName] = useState('');
+  const [name, setName] = useState('chickenbutt');
+  console.log(name);
   const [list, setList] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
   const [editID, setEditID] = useState(null);
