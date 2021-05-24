@@ -11,7 +11,11 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('hi');
+    if (!name) {
+      //display alert
+    } else if (name && isEditing) {
+      //deal with eddit
+    }
   };
 
   return (
