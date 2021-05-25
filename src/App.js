@@ -21,7 +21,7 @@ function App() {
     } else if (name && isEditing) {
       //deal with eddit
     } else {
-      //show alert
+      showAlert(true, 'success', 'item addet to the list');
       const newItem = { id: new Date().getTime().toString(), title: name };
       setList([...list, newItem]);
       setName('');
